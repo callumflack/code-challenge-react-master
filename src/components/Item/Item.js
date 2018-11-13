@@ -18,7 +18,7 @@ const List = props => {
   const items = props.items.map((item, index) => {
     return (
       <div className="item" key={index}>
-        <div className="itemThumbnail">
+        <div className="item-thumbnail">
           <img src={item.files[5]} alt="avatar" />
         </div>
         <div className="item-details">

@@ -11,9 +11,7 @@ class ItemsList extends Component {
     return (
       <div className="container">
         <h1>Items List</h1>
-        <div className="itemsList">
-          <List items={items} />
-        </div>
+        <List items={items} />
       </div>
     );
   }
