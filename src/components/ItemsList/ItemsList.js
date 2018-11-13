@@ -1,18 +1,22 @@
-import React from "react";
+import React, { Component } from "react";
 
-import Item from "../Item";
+import List from "../Item";
 
 import "./ItemsList.css";
 
-const ItemsList = ({ items }) => (
-  <div className="container">
-    <h1>Items List</h1>
-    <div className="itemsList">
-      {items.map((items, i) => (
-        <Item items={items} key={i} />
-      ))}
-    </div>
-  </div>
-);
+class ItemsList extends Component {
+  render() {
+    const { items } = this.props;
+
+    return (
+      <div className="container">
+        <h1>Items List</h1>
+        <div className="itemsList">
+          <List items={items} />
+        </div>
+      </div>
+    );
+  }
+}
 
 export default ItemsList;
